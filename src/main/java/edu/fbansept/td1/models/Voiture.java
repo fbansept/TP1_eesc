@@ -1,3 +1,5 @@
+package edu.fbansept.td1.models;
+
 public class Voiture extends Vehicule{
 
     private int nombreDeChevaux;
@@ -8,7 +10,13 @@ public class Voiture extends Vehicule{
     }
 
     public int fraisKilometrique(int nombreDeKilometre) {
+
         return nombreDeChevaux * nombreDeKilometre * 34;
+    }
+
+    @Override
+    public String info() {
+        return "C'est une voiture à 4 roues";
     }
 
     public int getNombreDeChevaux() {

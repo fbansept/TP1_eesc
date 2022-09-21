@@ -1,13 +1,19 @@
-public class Vehicule {
+package edu.fbansept.td1.models;
 
-    private int nombreDeRoue;
+public abstract class Vehicule {
 
-    private String marque;
+
+
+    protected int nombreDeRoue;
+
+    protected String marque;
 
     public Vehicule(int nombreDeRoue, String marque) {
         this.nombreDeRoue = nombreDeRoue;
         this.marque = marque;
     }
+
+    public abstract String info();
 
     public int getNombreDeRoue() {
         return nombreDeRoue;
